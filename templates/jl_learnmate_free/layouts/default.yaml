@@ -1,0 +1,153 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1503409966
+layout:
+  /header/:
+    -
+      - 'logo-9608 20'
+      - 'spacer-7683 30'
+      - 'custom-2399 50'
+  /navigation/:
+    -
+      - menu-6409
+  /above-slideshow/: {  }
+  /slideshow/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-position-4734
+      -
+        'mainbar 50':
+          -
+            - system-messages-7152
+          -
+            - system-content-1587
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  /footer/:
+    -
+      - 'custom-9609 25'
+      - 'custom-2410 17'
+      - 'custom-6963 17'
+      - 'custom-1285 17'
+      - 'custom-5076 24'
+    -
+      - 'branding-2819 70'
+      - 'social-3954 30'
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  above-slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+      extra: {  }
+  footer:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  logo-9608:
+    title: 'Logo / Image'
+  custom-2399:
+    title: 'Top Menu'
+    attributes:
+      html: "<div class=\"top-menu\">\n    <ul class=\"nav menu\">\n        <li><a href=\"#\">TRANDING</a></li>\n        <li><a href=\"#\">ONLINE</a></li>\n        <li><a href=\"#\">BOOK</a></li>\n        <li><a href=\"#\">EVENTS</a></li>\n        <li><a href=\"#\">ALUMNI</a></li>\n    </ul>\n</div>\n"
+  position-position-4734:
+    title: Aside
+    attributes:
+      key: aside
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  custom-9609:
+    title: Logo
+    attributes:
+      html: "<div class=\"jl-ft-about\" style=\"text-align: left\">\n\t<div class=\"jl-heading\">\n      <img src=\"gantry-media://logo/logo.png\" alt=\"\" />\n  </div>\n</div>"
+  custom-2410:
+    title: Information
+    attributes:
+      html: "<div class=\"jl-custom-ft uk-grid\">\n  <div class=\"jl-custom-title uk-width-1-1\">\n    <h3>Information</h3>\n  </div>\n\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Who we are </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">History </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Facts & Figures </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Programs </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Mission / Vision </a>\n    </div>\n\n</div>"
+  custom-6963:
+    title: 'Quick Link'
+    attributes:
+      html: "<div class=\"jl-custom-ft uk-grid\">\n  <div class=\"jl-custom-title uk-width-1-1\">\n    <h3>QUICK LINK</h3>\n  </div>\n\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Falcuties & Department </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Business & Corporation </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Events </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Charity </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Alumni </a>\n    </div>\n</div>"
+  custom-1285:
+    title: 'Extra Link'
+    attributes:
+      html: "<div class=\"jl-custom-ft uk-grid\">\n  <div class=\"jl-custom-title uk-width-1-1\">\n    <h3>EXTRA LINK</h3>\n  </div>\n\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Accessibility </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Legal </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Sitemap </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Terms of use </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Privacy </a>\n    </div>\n</div>"
+  custom-5076:
+    title: 'Contact Information'
+    attributes:
+      html: "<div class=\"jl-custom-ft uk-grid\">\n  <div class=\"jl-custom-title uk-width-1-1\">\n    <h3>CONTACT INFORMATION</h3>\n  </div>\n\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Senate House, Tyndall\nAvenue, Bristol, BS8 1TH, UK. </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Tel: +44 (0)117 928 9000 </a>\n    </div>\n    <div class=\"jl-custom-link uk-width-1-1\">\n      <a href=\"#\">Email: demo@joomlead.com </a>\n    </div>\n\n</div>"
+  branding-2819:
+    attributes:
+      content: 'Copyright © 2017. Powered by <a href="https://www.joomlead.com/" title="JoomLead" class="g-powered-by">JoomLead<span class="hidden-tablet"> </span></a>.All rights reserved.'
+  social-3954:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-twitter fa-fw'
+          text: ''
+          link: 'http://www.twitter.com/joomlead'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook fa-fw'
+          text: ''
+          link: 'http://www.facebook.com/joomlead'
+          name: Facebook
+        -
+          icon: 'fa fa-google-plus fa-fw'
+          text: ''
+          link: 'https://plus.google.com/+joomlead'
+          name: Google+
+        -
+          icon: 'fa fa-instagram'
+          text: ''
+          link: '#'
+          name: Instagram

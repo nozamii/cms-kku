@@ -1,0 +1,50 @@
+#g-footer {
+    background: $footer-background;
+    color: $footer-text-color !important;
+    font-size: 0.975rem;
+    .g-copyright {
+        @include breakpoint(mobile-only) {
+            text-align: center;
+        }
+    }
+
+    // Horizontal Menu
+    .g-horizontalmenu {
+        padding: 0.5rem 0;
+        text-align: right;
+
+        @include breakpoint(mobile-only) {
+            text-align: center;
+        }
+
+        a {
+            color: $footer-text-color;
+            font-size: 0.8125rem;
+            font-weight: $font-weight-regular;
+
+            &:hover {
+                color: fadeout($footer-text-color, 40%);
+            }
+        }
+    }
+
+    // To Top
+    .g-totop {
+        padding: 0.5rem 0;
+
+        a {
+            color: $footer-text-color;
+
+            &:hover {
+                color: fadeout($footer-text-color, 40%);
+            }
+        }
+    }
+}
+
+@media print {
+    #g-footer {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

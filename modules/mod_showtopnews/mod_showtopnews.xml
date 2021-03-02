@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension	type="module"	version="2.5"	client="site"	method="upgrade">
+	<name>Show Top News</name>
+	<creationDate>Sep 2012</creationDate>
+	<author>Mohamad Karimi</author>
+	<authorEmail>Info@asianetpardaz.com</authorEmail>
+	<authorUrl>http://www.asianetpardaz.com</authorUrl>
+	<copyright>(C) 2012 - 2013 Asia Net pardaz . All rights reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0.0</version>
+	<description><![CDATA[Best module for show News in front page . you can see more style in our site : <a href="http://www.asianetpardaz.com">www.asianetpardaz.com</a><br>این ماژول توسط شرکت ارتباطات آسیا نت پرداز  طراحی و پیاده سازی گشته . در صورت مشاهده سایر ماژول ها به سایت ما مراجعه نمایید.]]></description>
+	<languages>
+	    <language tag="en-GB">language/en-GB.mod_ShowTopNews.ini</language>
+	    <language tag="fa-IR">language/fa-IR.mod_ShowTopNews.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_showtopnews">mod_showtopnews.php</filename>
+		<filename>index.html</filename>	
+		<filename>helper.php</filename>
+        <folder>tmpl</folder>
+		      <filename>tmpl/default.php</filename>
+		      <filename>tmpl/index.html</filename>
+		 <folder>elements</folder>
+			 <filename>elements/asset.php</filename>
+			 <filename>elements/index.html</filename>
+		 <folder>assets</folder>
+			 <folder>assets/css</folder>
+		 		 <filename>assets/css/style.css</filename>
+				 <filename>assets/css/index.html</filename>
+	        <filename>assets/index.html</filename>
+		 
+    </files>
+	<config>
+    <fields name="params" addfieldpath="/modules/mod_showtopnews/elements">
+      <fieldset name="DATA_SOURCE" lable="COM_MODULES_DATA_SOURCE_FIELDSET_LABEL">
+        <field name="catid" type="category" extension="com_content" multiple="true" size="10" default="" label="CATEGORY" description="CATEGORY_DESC"/>        
+		<field name="count" type="text" default="5" label="COUNT" description="COUNT_DESC"/>
+        <field name="ordering" type="list" default="a.title" label="ORDER" description="ORDER_DESC">
+          <option value="a.ordering">JOOMLA_ORDERING</option>
+          <option value="a.publish_up">PUBLISHED_UP</option>
+          <option value="a.hits">HITS</option>
+          <option value="a.title">TITLE</option>
+          <option value="a.id">ID</option>
+          <option value="a.alias">ALIAS</option>
+          <option value="a.created">CREATED</option>
+          <option value="modified">MODIFIED</option>
+        </field>
+        <field name="ordering_direction" type="list" default="ASC" label="ORDERING_FILTER" description="ORDERING_FILTER_DESC">
+          <option value="DESC">FILTER_DESC</option>
+          <option value="ASC">FILTER_ASC</option>
+        </field>
+        <field name="user_id" type="list" default="0" label="AUTHORS" description="AUTHORS_DESC">
+          <option value="0">ANYONE</option>
+          <option value="by_me">BYME</option>
+          <option value="not_me">NOTBYME</option>
+        </field>
+        <field name="show_featured" type="list" default="" label="FEATURED" description="FEATURED_DESC">
+          <option value="">JSHOW</option>
+          <option value="0">JHIDE</option>
+          <option value="1">ONLY_SHOW_FEATURED</option>
+        </field>
+	  <field name="mod_width" type="text" default="400" label="MOD_WIDTH" description="MOD_WIDTH_DESC"/>
+	  <field name="mod_width1" type="text" default="250" label="MOD_WIDTH1" description="MOD_WIDTH1_DESC"/>
+	  <field name="mod_width2" type="text" default="150" label="MOD_WIDTH2" description="MOD_WIDTH2_DESC"/>	  
+      </fieldset>
+	  <fieldset name="DATA_TEXT" lable="COM_MODULES_DATA_TEXT_FIELDSET_LABEL">
+	      <field name="maintitle"  type="text" default="1" label="MAIN_TITLE" description="MAIN_TITLE_DESC"/>	
+		  <field name="titlelimit" type="text" default="0" label="TITLELIMIT" description="TITLELIMIT_DESC"/>		  
+	      <field name="deslimit"  type="text" default="0" label="DESLIMIT" description="DESLIMIT_DESC"/>
+		  <field name="show_text" type="list" default="" label="SHOW_TEXT" description="SHOW_TEXT_DESC">
+          <option value="0">ONLY_SHOW_FIRST_TEXT</option>
+          <option value="1">SHOW_ALL_TEXT</option>
+          <option value="2">CUSTOM_TEXT</option>
+		  <option value="3">NONE_TEXT</option>
+        </field>
+		
+		<field name="custom_text_show"  type="text" default="0" label="CUSTOM_TEXT_SHOW" description="CUSTOM_TEXT_SHOW_DESC" />
+	  </fieldset>
+	  <fieldset name="DATA_IMAGE" lable="COM_MODULES_DATA_IMAGE_FIELDSET_LABEL">
+		<field name="show_image" type="list" default="" label="SHOW_IMAGE" description="SHOW_IMAGE_DESC">
+          <option value="0">ONLY_SHOW_FIRST_IMAGE</option>
+          <option value="1">SHOW_ALL_IMAGE</option>
+          <option value="2">CUSTOM_IMAGE</option>
+		  <option value="3">NONE_IMAGE</option>
+        </field>
+		<field name="image_float" type="list" default="left" label="IMAGE_FLOAT" description="IMAGE_FLOAT_DESC">
+          <option value="left">LEFT</option>
+          <option value="right">RIGHT</option>
+          <option value="none">NONE</option>
+        </field>
+		<field name="custom_image_show"  type="text" default="0" label="CUSTOM_IMAGE_SHOW" description="CUSTOM_IMAGE_SHOW_DESC" />
+  		<field name="imageconvert" type="radio" default="1" label="IMAGE_CONVERT" description="IMAGE_CONVERT_DESC">
+          <option value="1">IMAGE_YESTHUMBS</option>
+          <option value="0">IMAGE_NOTHUMBS</option>
+        </field>
+		<field name="image_directory" type="text" default="images/showtopnews_thumbs/" label="IMAGE_DIRECTORY" description="IMAGE_DIRECTORY_DES"/>
+		<field name="thumbwidth"  type="text" default="100" label="IMAGE_THUMBNAILWIDTH" description="IMAGE_THUMBNAILWIDTH_DESC" />
+		<field name="thumbheight" type="text" default="100" label="IMAGE_THUMBNAILHEIGHT" description="IMAGE_THUMBNAILHEIGHT_DESC" />
+		<field name="opacity"  type="text" default="0.5" label="IMAGE_OPACITY" description="IMAGE_OPACITY_DESC" />
+	  </fieldset>
+	  <fieldset name="DATA_STYEL" lable="COM_MODULES_DATA_STYEL_FIELDSET_LABEL">
+	   	  <field name="styles" type="list" default="" label="SHOW_STYLE" description="SHOW_STYLE_DESC">
+		  <option value="0">Vertical_1 :: title | description | image </option>
+		  <option value="1">Vertical_2 :: image(top) | title | description </option>
+		  <option value="2">Vertical_4 :: image (right or left )| title | description </option>		  
+	      <option value="3">Horzantal_4  :: image (right or left )| title | description (other content in left) </option>	 
+	      <option value="4">Horzantal_5  :: image (right or left )| title | description (other content in right)</option>		      </field>
+	  </fieldset>
+      <fieldset name="advanced">
+        
+        <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+        <field name="cachemode" type="hidden" default="itemid">
+          <option value="itemid"/>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

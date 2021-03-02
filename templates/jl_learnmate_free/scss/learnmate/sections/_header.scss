@@ -1,0 +1,27 @@
+#g-header {
+	background: $header-background;
+	color: $header-text-color;
+	// Container
+	.g-container {
+		position: relative;
+	}
+
+	// Logo
+	.g-logo {
+		color: $navigation-text-color;
+		line-height: 2.8rem;
+
+		&.g-logo-boiler {
+			svg {
+				fill: $navigation-text-color;
+			}
+		}
+	}
+}
+
+@media print {
+	#g-testimonials {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

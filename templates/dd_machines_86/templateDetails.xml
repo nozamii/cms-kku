@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+  <name>dd_machines_86</name>
+  <creationDate>2016-05-05</creationDate>
+  	<author>DiabloDesign</author>
+	<authorEmail>biuro@diablodesign.eu</authorEmail>
+	<authorUrl>http://www.diablodesign.eu</authorUrl>
+	<copyright>Copyright (C) DiabloDesign License All rights reserved.</copyright>
+	<version>1.2.0</version>
+
+  <description>
+	<![CDATA[
+		<style type="text/css" media="all">
+				<!--
+			
+				h1 {clear:both;font-family: Georgia, sans-serif;font-size:36px;  font-weight: normal;}
+		
+		
+				-->
+			</style>
+	<div class="dd-description clearfix">
+	<h1><img src="http://diablodesign.eu/syg.png" /></a><span style="color: #cc0607;"> DD Machines 86 - Diablo Design template</span></h1>
+	<hr>
+		<div class="pull-left" style="max-width: 35.69%;">
+			<img style="max-width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 10px; background: #fff; border: 1px solid #e1e1e1;" src="../templates/dd_machines_86/images/sc.jpg" />
+		
+		</div>
+		<div class="pull-left" style="max-width: 64.31%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 0 30px;">
+			<div style="margin-bottom: 20px;">
+				<div style="margin-bottom: 20px;">
+				
+			
+				
+				<span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>Not for commercial!!! for commercial use, you must pay a special license (10 EURO)</li></span>
+				
+				
+				<span style="color: #a0a0a0; display: block; margin-top: 2px; font-size:12px;"><li><b>Why buy a license?</b><p>
+
+It allows you to remove ALL links to DiabloDesign.eu from your web site.
+
+Licensed Diablodedesign sites can also update their template (and remove the links to their website) with any of our current or future designs released.
+
+<li>Prior to purchasing a license, it is expected that you have fully tested our templates to ensure they meet your requirements.</li></span>
+<span style="color: #ff0000; display: block; margin-top: 2px;"><li>Szablonu nie można używać na stonach firmowych!!! Licencja dla stron firmowych kosztuje. (40PLN Brutto).</li> <li> Zakupić licencję można na naszej stronie internetowej.<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.diablodesign.eu/formularz-zamowienia">www.diablodesign.eu</a></li></span>
+				<div style="margin: 20px 0 0;">
+					<a style="text-decoration: none !important; outline: none;" target="_blank" href="http://www.diablodesign.eu">
+						<img src="http://diablodesign.eu/images/paypal.gif" />
+					</a>
+					<a href="http://www.diablodesign.eu" target="_blank" style="margin: 0 20px; color: #3ea5ea;">Buy Commercial license AMOUNT 10 €</a>
+				</div>
+			</div>
+		
+			</div>
+	<hr>
+				<div style="margin: 0 -20px;">
+				<div style="display: inline-block; margin: 0 20px 20px;">
+				<a href="http://www.diablodesign.eu" target="_blank"><img src="http://www.diablodesign.eu/images/diablo_logo.png" style="width:150px;" /></a>
+					<span style="display: block; color: #a0a0a0;">Free Templates for Joomla!</span>
+					<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.diablodesign.eu">www.diablodesign.eu</a>
+				</div>
+				<div style="display: inline-block; margin: 0 20px 20px;">
+				<a href="http://www.jomboom.com" target="_blank"><img src="http://jomboom.com/images/logo.png" style="width:150px;" /></a>
+					<span style="display: block; color: #a0a0a0;">Free Extensions for Joomla!</span>
+					<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.jomboom.com">www.jomboom.com</a>
+				</div>
+				
+				<div style="display: inline-block; margin: 0 20px 20px;">
+				<a href="http://www.templatki.com" target="_blank"><img src="http://templatki.com/images/logo.png" style="width:150px;" /></a>
+					<span style="display: block; color: #a0a0a0;">Free Joomla Templates</span>
+					<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.templatki.com">www.templatki.com</a>
+					
+				</div>
+				<div style="display: inline-block; margin: 0 20px 20px;">
+				<a href="http://www.templates24.org" target="_blank"><img src="http://templates24.org/logo.png" style="width:150px;" /></a>
+					<span style="display: block; color: #a0a0a0;">Free and premium templates</span>
+					<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.templates24.org">www.templates24.org</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	]]>
+	</description>
+ 
+  <files>
+    <file>CloudZoom.js</file>
+    <file>Readme.txt</file>
+    <file>blank.png</file>
+    <file>bootstrap.min.js</file>
+    <file>component.php</file>
+    <file>error.php</file>
+    <file>functions.php</file>
+    <file>index.html</file>
+    <file>index.php</file>
+    <file>jquery.js</file>
+    <file>modrender.php</file>
+    <file>script.ie.js</file>
+    <file>script.js</file>
+    <file>style.ie.css</file>
+    <file>templateDetails.xml</file>
+    <file>virtuemart.js</file>
+    <folder>css</folder>
+    <folder>fields</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>includes</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>library</folder>
+    <folder>prototypes</folder>
+    <folder>templates</folder>
+  </files>
+  <positions>
+    <position>banner-1</position>
+    <position>banner-2</position>
+    <position>banner-3</position>
+    <position>footer1</position>
+    <position>footer2</position>
+    <position>footer3</position>
+    <position>footer4</position>
+    <position>left</position>
+    <position>position-1</position>
+    <position>position-10</position>
+    <position>position-7</position>
+    <position>position-8</position>
+    <position>slide</position>
+    <position>topbanner-1</position>
+    <position>topbanner-2</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/dd_machines_86/fields">
+<fieldset name="logo" label="Logo">
+        <field type="spacer" class="text" label="...........................................LOGO......................................................." /> 
+        <field name="logoFile" default="templates/dd_machines_86/images/logo.png" type="media" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC"/>
+        <field name="logoLink" default="" type="text" label="TPL_LOGOLINK_LABEL" description="TPL_LOGOLINK_DESC"/>
+        <field type="spacer" name="spacer" hr="true"/>
+      </fieldset>
+	   <fieldset name="license" label="License Key">
+    <field type="spacer" class="text" label="......................License KEY..................................................................." />         
+    <field name="license" type="text" default="License key" size="50" label="License key" description="License key"/>         
+</fieldset>	
+	  <fieldset name="analytics" label="Google analytics">
+               <field type="spacer" class="text" label="......................Google analytics..................................................................." />
+             <field name="analytics" type="text" default="UA-XXXXXXXX-1" size="50" label="tracking Id"/>
+			 <field name="ac" type="radio" default="0" class="btn-group" label="" description="test">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>         
+</fieldset>
+
+	
+<fieldset name="favicon" label="Favicon">  
+          <field type="spacer" class="text" label="...........................................FAVICON........................................................" />    
+          	<field name="fav" type="media" label="Upload favicon" description="" default="templates/dd_machines_86/images/favicon.ico"/>
+</fieldset>	
+   <fieldset name="contact" label="Contact Header">
+    <field type="spacer" class="text" label="......................Contact.Header..................................................................." />         
+    <field name="name" type="text" default="Machines inc" size="50" label="Name:"/>
+	<field name="telephone" type="text" default="Call us: 1234 - 5678 - 9012 " size="50" label="Telephone:"/> 
+	<field name="email" type="text" default="Email us: company@email.com " size="50" label="Email:"/>
+	 <field type="spacer" class="text" label="......................Close.contact..................................................................." />  
+	 <field name="close_contact" type="radio" default="1" class="btn-group" label="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>              
+</fieldset>	
+<fieldset name="slideshow" label="Slideshow">
+			<field type="spacer" class="text" label="...............................SLIDE.1..1920px......................................................" />	
+			<field name="foto1" type="media" label="Upload photo 1" description="" default="templates/dd_machines_86/images/slideshow/1.jpg"/>
+			<field name="l1" type="text" default="http://" size="50" label="slide url"/>
+			<field name="s1" type="text" default="Machines caption 1" size="50" label="Caption 1"/>
+			<field name="s2" type="text" default="Machines text caption 2" size="50" label="Caption 2"/>
+			
+			<field type="spacer" class="text" label="...............................SLIDE.2..1920px......................................................" />	
+			<field name="foto2" type="media" label="Upload photo 2" description="" default="templates/dd_machines_86/images/slideshow/2.jpg"/>
+			<field name="l2" type="text" default="http://" size="50" label="slide url"/>
+			<field name="s3" type="text" default="Machines text caption 3" size="50" label="Caption 3"/>
+			<field name="s4" type="text" default="Machines text caption 4" size="50" label="Caption 4"/>
+			<field type="spacer" class="text" label="...............................SLIDE.3..1920px......................................................" />	
+			<field name="foto3" type="media" label="Upload photo 3" description="" default="templates/dd_machines_86/images/slideshow/3.jpg"/>
+			<field name="l3" type="text" default="http://" size="50" label="slide url"/>
+			<field name="s5" type="text" default="Machines text caption 5" size="50" label="Caption 5"/>
+			<field name="s6" type="text" default="Machines  text caption 6" size="50" label="Caption 6"/>
+			<field type="spacer" class="text" label="...............................SLIDE.4..1920px......................................................" />	
+			
+			<field name="foto4" type="media" label="Upload photo 4" description="" default="templates/dd_machines_86/images/slideshow/4.jpg"/>
+			<field name="l4" type="text" default="http://" size="50" label="slide url"/>
+			<field name="s7" type="text" default="Machines text caption 7" size="50" label="Caption 7"/>
+			`<field name="s8" type="text" default="Machines  text caption 8" size="50" label="Caption 8"/>
+				<field type="spacer" label="Disable all capition" />
+			<field name="close_text" type="radio" default="1" class="btn-group"  label="" description="test">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+						<field type="spacer" label="Disable Slideshow / module position slide " />
+			<field name="close_slideshow" type="radio" default="1" class="btn-group"  label="" description="test">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+			</fieldset>
+			<fieldset name="circle" label="Circle Button">
+			    <field type="spacer" class="text" label="..........................................1.Circle button................................." />         
+					
+			<field name="cf1" type="media" label="Upload image" description="" default="templates/dd_machines_86/images/gallery/1.jpg"/>
+			<field name="ct1" type="text" default="1. Title" size="50" label="Title" />
+		    <field name="cte1" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+			<field name="cl1" type="text" default="http://" size="50" label="url image" />
+			 <field type="spacer" class="text" label="..........................................2.Circle button................................." />  
+			
+			<field name="cf2" type="media" label="Upload image" description="" default="templates/dd_machines_86/images/gallery/2.jpg"/>
+			<field name="ct2" type="text" default="2. Title" size="50" label="Title" />
+		    <field name="cte2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+			<field name="cl2" type="text" default="http://" size="50" label="url image" />
+			 <field type="spacer" class="text" label="..........................................3.Circle button................................." />  
+	
+	<field name="cf3" type="media" label="Upload image" description="" default="templates/dd_machines_86/images/gallery/3.jpg"/>
+			<field name="ct3" type="text" default="3. Title " size="50" label="Title" />
+		    <field name="cte3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+			<field name="cl3" type="text" default="http://" size="50" label="url image" />
+	 <field type="spacer" class="text" label="..........................................4.Circle button................................." />  
+	
+	<field name="cf4" type="media" label="Upload image" description="" default="templates/dd_machines_86/images/gallery/4.jpg"/>
+			<field name="ct4" type="text" default="4. Title" size="50" label="Title" />
+		    <field name="cte4" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+			<field name="cl4" type="text" default="http://" size="50" label="url image" />
+	
+			<field name="circlec" type="radio" default="1" class="btn-group" label="">
+					<option value="0">Disable</option>
+					<option value="1">Enable</option>
+				</field>
+				
+			</fieldset>
+			<fieldset name="info" label="Info BOX">
+    <field type="spacer" class="text" label="......................Info BOX..................................................................." />         
+    <field name="it1" type="text" default="Caterpillar inc" size="50" label="Text line 1"/>
+	<field name="it2" type="text" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " size="50" label="Text line 2"/> 
+	 <field type="spacer" class="text" label="......................Button..................................................................." />     
+	<field name="ibn" type="text" default="Read More" size="50" label="Name button:"/>
+	<field name="ibl" type="text" default="http://" size="50" label="url button:"/>
+	 <field type="spacer" class="text" label="......................Close.infobox..................................................................." />  
+	 <field name="close_ib" type="radio" default="1" class="btn-group" label="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>   
+			
+			</fieldset>
+			<fieldset name="maps" label="Google Map">
+			 <field type="spacer" class="text" label="...........................................Google.Maps.................................................." /> 
+			 <field name="bgm" type="media" label="Upload background map" description="" default="templates/dd_machines_86/images/slideshow/bgm.jpg"/> 
+            <field name="map1" type="text" default="Krakow" label="City" description="City" filter="string" />
+			<field name="map2" type="text" default="NowaHuta" label="Street" description="Street" filter="string" />
+			
+			<field type="spacer" label="Disable Map" />
+			<field name="mc" type="radio" default="1" class="btn-group"  label="" description="map">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+					</fieldset>
+					 <fieldset name="footer" label="Footer">  
+          <field type="spacer" class="text" label="...........................................FOOTER......................................................." />    
+          <field name="footer1" type="text" default="Machines" size="50" label="Site name" description="footer site name"/>
+		    <field type="spacer" class="text" label="...........................................Terms of Use......................................................." />   
+		  <field name="terms" type="text" default="Terms of Use" size="50" label="Terms of Use" />
+		  <field name="termsl" type="text" default="http://" size="50" label="Terms url" />
+		  <field name="closeterms" type="radio" default="1" class="btn-group" label="Disabled Terms of Use" description="">
+					<option value="0">Disabled / Wyłącz</option>
+					<option value="1">Enabled / Załącz</option>
+				</field>
+		  <field type="spacer" class="text" label="...........................................Privacy Policy......................................................." />
+		  <field name="privacy" type="text" default="Privacy Policy" size="50" label="Privacy Policy" />
+		  <field name="privacyl" type="text" default="http://" size="50" label="Privacy Policy  url" />
+		   <field name="closeprivacy" type="radio" default="1" class="btn-group" label="Disabled Privacy Policy" description="">
+					<option value="0">Disabled / Wyłącz</option>
+					<option value="1">Enabled / Załącz</option>
+				</field>
+	<field type="spacer" class="text" label="...........................................Contact.Footer......................................................." />
+	<field name="emf" type="text" default="contact@mywebsite.com" size="50" label="Email" />
+		<field name="emailclose" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+		  <field name="tef" type="text" default="+1 (555) 123-4567 " size="50" label="Telephone" />
+		  	<field name="telephoneclose" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+		  <field name="skype" type="text" default="my.skype" size="50" label="Skype" />
+		  	<field name="skypeclose" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+</fieldset>	
+
+		<fieldset name="social" label="Footer Social icon">	
+			<field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="facebook" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url:" description="facebok link" filter="string" />
+				<field name="fc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="twitter" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url:" description="Twitter link" filter="string" />
+				<field name="tc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="google" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="gc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+					<field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+			<field name="pinterest" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+				<field name="pc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+	
+		        <field type="spacer" class="text" label=".........................................DISABL.ALL.ICON........................................." />
+				<field name="allicon" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			
+			
+			</fieldset>
+    </fields>
+  </config>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_dd_machines_86.ini</language>
+  </languages>
+</extension>

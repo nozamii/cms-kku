@@ -1,0 +1,9 @@
+learnmate-theme:
+  title: 'Learnmate Theme'
+  description: 'Sample menu for learnmate theme.'
+
+  items:
+    learnmate:
+      title: 'Home'
+      outline: default
+      home: 1

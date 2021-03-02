@@ -1,0 +1,84 @@
+<?php
+return [
+    '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
+    'filename' => '/var/www/html/templates/jl_learnmate_free/custom/config/_offline/index.yaml',
+    'modified' => 1614532198,
+    'data' => [
+        'name' => '_offline',
+        'timestamp' => 1614532188,
+        'version' => 7,
+        'preset' => [
+            'image' => 'gantry-admin://images/layouts/default.png',
+            'name' => 'default',
+            'timestamp' => 1483060787
+        ],
+        'positions' => [
+            
+        ],
+        'sections' => [
+            'header' => 'Header',
+            'navigation' => 'Navigation',
+            'above-slideshow' => 'Above-slideshow',
+            'slideshow' => 'Slideshow',
+            'aside' => 'Aside',
+            'sidebar' => 'Sidebar',
+            'mainbar' => 'Mainbar',
+            'footer' => 'Footer',
+            'offcanvas' => 'Offcanvas'
+        ],
+        'particles' => [
+            'messages' => [
+                'system-messages-5122' => 'System Messages'
+            ],
+            'content' => [
+                'system-content-1119' => 'Page Content'
+            ],
+            'logo' => [
+                'logo-1086' => 'Logo / Image'
+            ],
+            'spacer' => [
+                'spacer-1414' => 'Spacer'
+            ],
+            'custom' => [
+                'custom-5571' => 'Top Menu',
+                'custom-2032' => 'Logo',
+                'custom-5945' => 'Information',
+                'custom-9790' => 'Quick Link',
+                'custom-3506' => 'Extra Link',
+                'custom-6537' => 'Contact Information'
+            ],
+            'menu' => [
+                'menu-3094' => 'Menu'
+            ],
+            'branding' => [
+                'branding-7484' => 'Branding'
+            ],
+            'social' => [
+                'social-1906' => 'Social'
+            ],
+            'mobile-menu' => [
+                'mobile-menu-8595' => 'Mobile-menu'
+            ]
+        ],
+        'inherit' => [
+            'default' => [
+                'header' => 'header',
+                'navigation' => 'navigation',
+                'footer' => 'footer',
+                'offcanvas' => 'offcanvas',
+                'logo-1086' => 'logo-2058',
+                'spacer-1414' => 'spacer-7392',
+                'custom-5571' => 'custom-4088',
+                'menu-3094' => 'menu-8758',
+                'custom-2032' => 'custom-5806',
+                'custom-5945' => 'custom-5847',
+                'custom-9790' => 'custom-6788',
+                'custom-3506' => 'custom-5941',
+                'custom-6537' => 'custom-9772',
+                'branding-7484' => 'branding-2462',
+                'social-1906' => 'social-4925',
+                'mobile-menu-8595' => 'mobile-menu-1965'
+            ]
+        ]
+    ]
+];

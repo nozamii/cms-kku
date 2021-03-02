@@ -1,0 +1,15 @@
+name: Above slideshow Styles
+description: Above slideshow section styles for the Learnmate theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#424753"

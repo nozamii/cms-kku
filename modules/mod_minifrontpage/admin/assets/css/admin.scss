@@ -1,0 +1,27 @@
+/* minifpp css */
+.alert-minifpp{
+    margin: 0 0 0 0!important;
+    background: #FCF8E3;
+    h4 {
+        margin-bottom: 0!important;
+    }
+}
+
+.btn-minifpp,.btn-minifpp2 {
+    display: inline-block;
+    border-radius: 4px;
+    background: #fff;
+    padding: 3px 8px;
+    text-decoration: none!important;
+    margin: 5px 5px 0 0;
+    border:1px solid rgba(0,0,0,0.2);
+    transition: 0.25s all ease-in;
+    &:hover {
+        background: #111!important;
+        color: #fff!important;
+    }
+}
+.btn-minifpp2 {
+    background:#3071A9!important;
+    color: #fff!important;
+}

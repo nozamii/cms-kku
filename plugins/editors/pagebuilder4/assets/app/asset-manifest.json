@@ -1,0 +1,25 @@
+{
+  "files": {
+    "pagefly/css/0.6bf97a78.chunk.css": "/pagefly/css/0.6bf97a78.chunk.css",
+    "pagefly/js/0.318631ab.chunk.js": "/pagefly/js/0.318631ab.chunk.js",
+    "pagefly/js/1.ee9f472f.chunk.js": "/pagefly/js/1.ee9f472f.chunk.js",
+    "animation-style.css": "/pagefly/css/animation-style.css",
+    "animation-style.js": "/pagefly/core/animation-style.js",
+    "helper.js": "/pagefly/core/helper.js",
+    "main.js": "/pagefly/main.js",
+    "main-style.css": "/pagefly/css/main-style.css",
+    "main-style.js": "/pagefly/core/main-style.js",
+    "pagefly/js/6.76daa589.chunk.js": "/pagefly/js/6.76daa589.chunk.js",
+    "pagefly/js/7.94657502.chunk.js": "/pagefly/js/7.94657502.chunk.js",
+    "pagefly/js/8.44a07c27.chunk.js": "/pagefly/js/8.44a07c27.chunk.js",
+    "pagefly/js/9.1503a74b.chunk.js": "/pagefly/js/9.1503a74b.chunk.js",
+    "pagefly/js/10.9dadf62f.chunk.js": "/pagefly/js/10.9dadf62f.chunk.js",
+    "index.html": "/index.html",
+    "pagefly/js/0.318631ab.chunk.js.LICENSE.txt": "/pagefly/js/0.318631ab.chunk.js.LICENSE.txt",
+    "pagefly/js/6.76daa589.chunk.js.LICENSE.txt": "/pagefly/js/6.76daa589.chunk.js.LICENSE.txt",
+    "static/media/imagePlaceholder.b61faa1d.svg": "/static/media/imagePlaceholder.b61faa1d.svg"
+  },
+  "entrypoints": [
+    "pagefly/main.js"
+  ]
+}

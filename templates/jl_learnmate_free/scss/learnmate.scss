@@ -1,0 +1,123 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+
+@import "dependencies";
+
+//-------------------------------------------
+
+// THEME STYLING
+
+// Base
+@import "nucleus/theme/base";
+
+// Core
+@import "learnmate/styles/core";
+
+// Hyperlinks
+@import "learnmate/styles/hyperlinks";
+
+// Typography
+@import "learnmate/styles/typography";
+
+// Utilities
+@import "learnmate/styles/utilities";
+
+// Variations
+@import "learnmate/styles/variations";
+
+// Buttons
+@import "learnmate/styles/buttons";
+
+// Tables
+@import "learnmate/styles/tables";
+
+// Forms
+@import "learnmate/styles/forms";
+
+// Dropdown Animations
+@import "learnmate/styles/dropdownanimations";
+
+// Demo Styling
+@import "learnmate/styles/learnmate-style";
+
+//-------------------------------------------
+
+// SECTIONS STYLING
+
+// PageSurround
+@import "learnmate/sections/pagesurround";
+
+
+// Header
+@import "learnmate/sections/header";
+
+// Above Slideshow
+@import "learnmate/sections/above-slideshow";
+
+// Slideshow
+@import "learnmate/sections/slideshow";
+
+// Navigation
+@import "learnmate/sections/navigation";
+
+// Main Nav
+@import "learnmate/sections/mainnav";
+
+// Main
+@import "learnmate/sections/main";
+
+// Aside
+@import "learnmate/sections/aside";
+
+// Sidebar
+@import "learnmate/sections/sidebar";
+
+// Footer
+@import "learnmate/sections/footer";
+
+// Off Canvas
+@import "learnmate/sections/offcanvas";
+
+//-------------------------------------------
+
+// LAYOUTS STYLING
+
+// Error
+@import "learnmate/layouts/error";
+
+// Offline
+@import "learnmate/layouts/offline";
+
+//-------------------------------------------
+
+// PARTICLES STYLING
+
+// Logo
+@import "learnmate/particles/logo";
+
+// Social
+@import "learnmate/particles/social";
+
+// Content Array
+@import "learnmate/particles/contentarray";
+
+// Content Cubes
+@import "learnmate/particles/contentcubes";
+
+// Content Tabs
+@import "learnmate/particles/contenttabs";
+
+// Owl Carousel
+@import "learnmate/particles/owlcarousel";
+
+// Horizontal Menu
+@import "learnmate/particles/horizontalmenu";
+
+// To Top
+@import "learnmate/particles/totop";
+
+//-------------------------------------------
+
+// BREAKPOINTS
+@import "nucleus/theme/breakpoints/base";
+
+//-------------------------------------------

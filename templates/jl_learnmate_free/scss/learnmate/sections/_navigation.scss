@@ -1,0 +1,213 @@
+#g-navigation {
+  background: $navigation-background;
+  color: $navigation-text-color;
+  position: relative;
+  z-index: 11;
+  margin: 0 1.5rem;
+  .g-grid {
+    background: $accent-color-1;
+  }
+  // Container
+  .g-container {
+    position: relative;
+  }
+
+  // Logo
+  .g-logo {
+    color: $navigation-text-color;
+    line-height: 2.8rem;
+
+    &.g-logo-boiler {
+      svg {
+        fill: $navigation-text-color;
+      }
+    }
+  }
+
+  // Social Particle
+  .g-social-header {
+    @include breakpoint(mobile-only) {
+      .g-content {
+        margin-top: 0;
+        padding: 0 $content-padding;
+      }
+    }
+  }
+
+  .g-social {
+    text-align: right;
+    line-height: 3.125;
+
+    @include breakpoint(mobile-only) {
+      text-align: center;
+    }
+
+    .rtl & {
+      text-align: left;
+    }
+  }
+
+  // Menu Styling
+  .g-main-nav {
+    font-family: get-font-family($font-family-default);
+    font-weight: $font-weight-medium;
+    line-height: $navigation-line-height;
+    .g-toplevel {
+
+      > li:first-child {
+          > .g-menu-item-container >.g-menu-item-content {
+            border-left: 0;
+          }
+      }
+      > li {
+        @include breakpoint(tablet-range) {
+          margin: 0 0.2rem;
+        }
+        > .g-menu-item-container {
+          color: #fff;
+          padding: 0;
+          line-height: 50px;
+          font-size: 13px;
+          text-transform: uppercase;
+          border-right: solid 1px rgba(255,255,255,.25);
+          margin-left: -5px;
+          >.g-menu-item-content {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .g-menu-parent-indicator {
+            vertical-align: top;
+
+            &:after {
+              display: none;
+              content: "\f107";
+              opacity: 0.75;
+              width: 1rem;
+              font-weight: $font-weight-regular;
+            }
+          }
+
+          i {
+            opacity: 1;
+          }
+        }
+        > .g-menu-item-container {
+          &:hover{
+            background: darken($accent-color-1, 10%);
+          }
+        }
+
+
+
+        &.active {
+          > .g-menu-item-container {
+              background: darken($accent-color-1, 10%);
+
+
+            > .g-selected {
+              box-shadow: 0 2px 0 fadeout($navigation-text-color, 80%);
+            }
+          }
+        }
+      }
+
+    }
+
+    .g-dropdown {
+      background: #fff;
+      border-radius: 0;
+      box-shadow: 0 3px 12px rgba(0,0,0,.07);
+      margin-top: 0;
+      margin-left: -5px;
+      a {
+        color: $white;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      .g-dropdown-column {
+        position: relative;
+      }
+
+      .g-dropdown {
+        margin-left: 0px;
+      }
+    }
+
+    .g-sublevel {
+      > li {
+        background: rgba(0,0,0,0.9);
+        > .g-menu-item-container {
+          color: #b0b0b0;
+
+          > .g-selected {
+            color: $white;
+          }
+        }
+
+        &:not(:last-child) {
+          border-bottom: solid 1px rgba(255,255,255,.25);
+          > .g-menu-item-container {
+
+            > .g-selected {
+              border-bottom: solid 1px rgba(255,255,255,.25);
+            }
+          }
+        }
+
+        &:hover, &.active {
+          background: $accent-color-3;
+          > .g-menu-item-container {
+            color: $white;
+
+            > .g-selected {
+              color: $accent-color-1;
+            }
+          }
+        }
+
+        &.g-menu-item-type-particle {
+          > .g-menu-item-container {
+            border: 0;
+          }
+
+          &:hover, &.active {
+            > .g-menu-item-container {
+              border: 0;
+            }
+          }
+        }
+
+        &.g-menu-item-type-particle {
+          &:hover {
+            > .g-menu-item-container {
+              background: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .g-menu-block {
+    @include breakpoint(mobile-only) {
+      display: none;
+    }
+  }
+
+  .g-menu-item-subtitle {
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    padding-top: 0;
+  }
+}
+
+@media print {
+  #g-navigation {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

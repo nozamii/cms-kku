@@ -1,0 +1,128 @@
+/* style 1 */
+.shtp-text-0{}
+.shtp-maintitle-0{padding:1px 0 1px 0; clear:both; position:relative; margin:auto 0 auto 0;}
+.shtp-maintitle-sub-0{padding:1px 0 1px 0;margin:1px ;}		
+.shtp-header-0 {
+	clear:both;
+	position:relative;
+	padding:1px 1px 1px 1px;}
+.shtp-header-0 a{}
+.shtp-header-0 a:hover{}
+.shtp-image-0{
+	position:relative !important;
+	margin-left: auto !important;
+	margin-right: auto !important;	
+	margin: 2px !important;
+	padding:2px 2px 2px 2px !important;
+	clear:both;}
+.shtp-image-0 img{
+	padding:2px 2px 2px 2px;
+	border:1px solid #F0F0F0;
+   -moz-border-radius: 5px;
+    clear:both;
+	margin:2px;}
+.shtp-image-0 img:hover{
+	opacity:1.0 !important;
+	filter:alpha(opacity=100) !important;
+	padding:2px 2px 2px 2px;
+	border:1px solid #F0F0F0;
+   -moz-border-radius: 5px;
+    clear:both;
+	margin:2px;}
+.shtp-sp-0{border-bottom:1px solid #F0F0F0;}
+.shtp-header-sub-0{
+	padding:1px 1px 1px 1px;
+	border-bottom:1px solid #F0F0F0;
+	clear:both !important;}	
+.shtp-header-sub-0:hover{
+	padding:1px 1px 1px 1px;
+	background-color:#FBFBFB;
+	border-bottom:1px solid #F0F0F0;
+	clear:both !important;}	
+/* style 2 */
+.shtp-maintitle-1{padding:2px 2px 2px 2px; clear:both; position:relative; margin:auto 0 auto 0; border-bottom:1px solid #CCC;}
+.shtp-maintitle-sub-1{padding:2px 2px 2px 2px;margin:2px ;}		
+.shtp-header-1 {
+	clear:both;
+	position:relative;
+	padding:2px 2px 2px 2px;}
+.shtp-header-1 a{}
+.shtp-header-1 a:hover{}
+.shtp-image-1{
+	position:relative !important;
+	margin-left: auto !important;
+	margin-right: auto !important;	
+	margin-top: 2px !important;
+	padding:2px !important;
+	clear:both;}
+.shtp-image-1 img{
+	padding:2px 2px 2px 2px;
+	border:1px solid #F0F0F0;
+   -moz-border-radius: 5px;
+    clear:both;
+	margin:2px;}
+.shtp-image-1 img:hover{
+	opacity:1.0 !important;
+	filter:alpha(opacity=100) !important;
+	padding:2px 2px 2px 2px;
+	border:1px solid #F0F0F0;
+    clear:both;
+	margin:2px;}
+.shtp-sp-1{
+	line-height:35px;
+    border-bottom:1px solid #F0F0F0;}
+.shtp-header-sub-1{
+	padding:2px 2px 2px 2px;
+	border-bottom:1px solid #F0F0F0;
+	clear:both !important;}	
+.shtp-header-sub-1:hover{
+	padding:2px 2px 2px 2px;
+	border-bottom:1px solid #F0F0F0;
+	background-color:#FBFBFB;
+	clear:both !important;}	
+/* style 2  - 3 - 4*/
+.shtp-maintitle-2 h3,  .shtp-maintitle-sub-3 h3 ,.shtp-maintitle-sub-4 h3 { }
+.shtp-maintitle-2 , .shtp-maintitle-3 , .shtp-maintitle-4    {padding:2px 2px 2px 2px;  margin:auto 0 auto 0;  height:auto ; }
+.shtp-maintitle-sub-2 , .shtp-maintitle-sub-3 , .shtp-maintitle-sub-4 {padding:2px 2px 2px 2px; margin:2px ;  }		
+.shtp-header-2,.shtp-header-3 ,.shtp-header-4  {
+	display:block !important;
+	padding:2px 2px 2px 2px;
+	position:relative;
+   -moz-border-radius: 5px;}
+   
+.shtp-header-2 a ,.shtp-header-3 a,.shtp-header-4 a{}
+.shtp-header-2 a:hover , .shtp-header-3 a:hover, .shtp-header-4 a:hover{}
+.shtp-text-2 ,.shtp-text-3,.shtp-text-4{display:table-cell; border-top:solid 1px #CCC;}
+.shtp-text-2 ,.shtp-text-3,.shtp-text-4{padding:2px 2px 2px 2px;}
+.shtp-image-2 img , .shtp-image-3 img, .shtp-image-4 img{
+	padding:2px 2px 2px 2px;
+   -moz-border-radius: 5px;
+	margin:2px;
+	position:relative;}
+.shtp-image-2 img:hover , .shtp-image-3 img:hover, .shtp-image-4 img:hover{
+	opacity:1.0 !important;
+	filter:alpha(opacity=100) !important;
+	padding:2px 2px 2px 2px;
+   -moz-border-radius: 5px;
+	margin:2px;}
+.shtp-sp-2 ,.shtp-sp-3,.shtp-sp-4{}
+.shtp-header-sub-2 a ,.shtp-header-sub-3 a,.shtp-header-sub-4 a{
+	clear:both !important;}	
+.shtp-header-sub-2 a:hover , .shtp-header-sub-3 a:hover, .shtp-header-sub-4 a:hover{
+	background-color:#FBFBFB;	
+	clear:both !important;}	
+	
+.main2{float:right !important; clear:both !important;}	
+.sub2{float:right !important; clear:both !important;}
+
+.main3{ float:right !important; }
+.sub3{  float:left !important;   }
+.sub-3{ clear:both; display:block !important;  border-bottom:1px solid #EEE}
+
+.main4{float:left !important; }
+.sub4{float:right !important;   }
+.sub-4{ clear:both; display:block !important;  border-bottom:1px solid #EEE}
+
+.sub-2{ clear:both; display:block !important;  border-bottom:1px solid #EEE}
+
+

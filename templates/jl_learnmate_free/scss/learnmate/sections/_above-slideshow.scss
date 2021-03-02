@@ -1,0 +1,15 @@
+#g-above-slideshow {
+    background: $above-slideshow-background;
+    color: $above-slideshow-text-color;
+    .g-content{
+      padding: 0 0.938rem;
+      margin: 0 0.625rem;
+    }
+}
+
+@media print {
+    #g-above-slideshow {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

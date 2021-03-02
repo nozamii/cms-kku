@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="module" client="site" method="upgrade">
+	<name>Easy Content Thumb</name> 
+    <version>1.0</version>
+    <creationDate>Mars, 2016</creationDate>
+    <author>JoomBoost.com</author>
+    <authorEmail>support@joomboost.com</authorEmail>
+    <authorUrl>https://www.joomBoost.com</authorUrl>
+    <copyright>Copyright 2016 - JoomBoost.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+		<h1 class="sub-heading">Easy Content Thumb</h1>	
+		<div class="description">Download more free extensions from <a href="https://www.joomBoost.com/" target="_blank">JoomBoost.com</a><br/>
+		Need help? <a href="https://www.joomboost.com/support/forums/categories/listings/free-modules.html" target="_blank" class="btn btn-small">Forum Support</a>
+		
+		</div><br><br>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_easycontentthumb">mod_easycontentthumb.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>php</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_easycontentthumb/php">
+		<fieldset name="basic">
+			<field name="jQuery" type="radio" class="btn-group" default="0" label="jQuery" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+				<option value="0">Disable</option>
+				<option	value="1">Enable</option>
+			</field>
+			<field name="imgPath" type="media" label="Caption Image" description="Choose an image." />
+			<field name="maxW" type="text" default="300" label="Max Image Width" description="Maximum width of the image in pixels." />
+			
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Display Settings&lt;/div&gt;" />
+			
+			<field name="captionAnim" type="list" default="0" label="Caption Animation" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+				<option value="0">Normal</option>
+				<option	value="1">Fade-In</option>
+				<option	value="2">Slide-Down</option>
+			</field>
+						
+			<field name="title" type="text" default="Caption Title Here" label="Caption Title" description="" />
+			<field name="text" type="textarea" filter="safehtml" cols="60" rows="5" default="" label="Caption Text" description="Caption text. HTML allowed." />
+			<field name="linkUrl" type="text" default="" label="Caption Link URL" description="" />
+			<field name="linkText" type="text" default=""  label="Caption Link Text" description="" />				
+
+			<field name="btnBg" type="color" default="#08c" label="Button Color" description="Select color of title and text." />
+			<field name="btnBgT" type="color" default="#fff" label="Button Text Color" description="Select color of title and text." />
+			
+			<field name="btnBgH" type="color" default="#fff" label="Button Hover Color" description="Select color of title and text." />
+			<field name="btnBgTH" type="color" default="#08c" label="Button Text Hover" description="Select color of title and text." />
+
+			<field type="asset" />
+			</fieldset>		
+		</fields>
+	</config>
+</extension>
