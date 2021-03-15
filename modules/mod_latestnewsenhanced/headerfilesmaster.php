@@ -34,6 +34,9 @@ class LNE_CSSFileCache extends SYWHeaderFilesCache
 		$horizontal = ($params->get('align', 'v') === 'h') ? true : false;
 		$variables[] = 'horizontal';
 
+		$items_align = $params->get('items_align', 'c');
+		$variables[] = 'items_align';
+
 		// items width and height
 
 		$items_height = trim($params->get('items_h', ''));

@@ -980,7 +980,8 @@ class modLatestNewsEnhancedHelper
 
 		$minified = (JDEBUG) ? '' : '-min';
 
-		Factory::getDocument()->addStyleSheet(Uri::base(true).'/modules/mod_latestnewsenhanced/styles/common_styles' . $minified . '.css');
+		//Factory::getDocument()->addStyleSheet(Uri::base(true).'/modules/mod_latestnewsenhanced/styles/common_styles' . $minified . '.css');
+		HTMLHelper::_('stylesheet', 'modules/mod_latestnewsenhanced/styles/common_styles' . $minified . '.css', array('relative' => false, 'version' => 'auto'));
 
 		self::$commonStylesLoaded = true;
 	}
@@ -1003,9 +1004,11 @@ class modLatestNewsEnhancedHelper
 		}
 
 		if (!\JFile::exists(JPATH_ROOT.'/modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles-min.css') || JDEBUG) {
-			$doc->addStyleSheet(Uri::base(true).'/modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles.css');
+			//$doc->addStyleSheet(Uri::base(true).'/modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles.css');
+			HTMLHelper::_('stylesheet', 'modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles.css', array('relative' => false, 'version' => 'auto'));
 		} else {
-			$doc->addStyleSheet(Uri::base(true).'/modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles-min.css');
+			//$doc->addStyleSheet(Uri::base(true).'/modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles-min.css');
+			HTMLHelper::_('stylesheet', 'modules/mod_latestnewsenhanced/styles/'.$prefix.'_styles-min.css', array('relative' => false, 'version' => 'auto'));
 		}
 
 		self::$userStylesLoaded = true;

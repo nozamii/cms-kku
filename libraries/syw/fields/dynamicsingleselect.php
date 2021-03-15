@@ -48,6 +48,19 @@ class JFormFieldDynamicSingleSelect extends JFormFieldList
 					jQuery('#".$this->id."_elements .element').removeClass('selected');
 					jQuery(this).addClass('selected');
 				});
+				jQuery(document).on('subform-row-add', function(event, row) {
+					jQuery(row).find('.dynamicfield .element.enabled').each(function() {
+						if (jQuery(this).attr('data-option') == '".$this->default."') {
+							jQuery(this).addClass('selected');
+						}
+					});
+					jQuery(row).find('.dynamicfield .element.enabled').click(function() {
+						jQuery(row).find('.dynamicfield input').val(jQuery(this).attr('data-option')).change();
+						jQuery(row).find('.dynamicfield .element').removeClass('selected');
+						jQuery(this).addClass('selected');
+					});
+
+				});
 			});
 		");
 
@@ -62,7 +75,7 @@ class JFormFieldDynamicSingleSelect extends JFormFieldList
 			#".$this->id."_elements .element.selected { background-color: ".$this->selectedcolor."; color: #fff }
 			#".$this->id."_elements .element.disabled { opacity: 0.65; filter: alpha(opacity=65); cursor: default; }
 			#".$this->id."_elements .images-container { display: inline-block; position: relative; width: ".$this->width."px; height: ".$this->height."px; margin-bottom: 5px;" . ($this->imagebgcolor ? " background-color: " . $this->imagebgcolor : "") . " }
-			#".$this->id."_elements .images-container .imagelabel { position: absolute; top: 5px; left: 5px; z-index: 100 }
+			#".$this->id."_elements .images-container .imagelabel { position: absolute; top: 5px; left: 5px; z-index: 10 }
 			#".$this->id."_elements .title { width: ".$this->width."px; }
 			#".$this->id."_elements .description { width: ".$this->width."px; font-size: .8em }
 			#".$this->id."_elements .element img { display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transition: opacity .4s ease; transition: opacity .4s ease; max-width: ".$this->width."px; max-height: ".$this->height."px; }
@@ -85,7 +98,8 @@ class JFormFieldDynamicSingleSelect extends JFormFieldList
 			$value = $this->value;
 		}
 
-		$html = '<ul id="'.$this->id.'_elements" class="elements thumbnails">';
+		$html = '<div class="dynamicfield">';
+		$html .= '<ul id="'.$this->id.'_elements" class="elements thumbnails">';
 
 		foreach ($options as $option) {
 
@@ -144,6 +158,7 @@ class JFormFieldDynamicSingleSelect extends JFormFieldList
 
 		$html .= '</ul>';
 		$html .= '<input type="hidden" id="'.$this->id.'_id" name="'.$this->name.'" value="'.$value.'" />';
+		$html .= '</div>';
 
 		return $html;
 	}

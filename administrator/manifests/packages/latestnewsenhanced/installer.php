@@ -20,8 +20,8 @@ jimport('joomla.filesystem.folder');
  */
 class pkg_latestnewsenhancedInstallerScript
 {
-	static $version = '5.0.3';
-	static $minimum_needed_library_version = '1.6.3';
+	static $version = '5.1.1';
+	static $minimum_needed_library_version = '1.6.4';
 	static $available_languages = array('da-DK', 'de-DE', 'en-GB', 'es-ES', 'fi-FI', 'fr-FR', 'hu-HU', 'it-IT', 'ja-JP', 'nl-NL', 'pl-PL', 'pt-BR', 'ru-RU', 'sl-SI', 'tr-TR');
 	static $download_link = 'http://www.simplifyyourweb.com/downloads/syw-extension-library';
 	static $changelog_link = 'http://www.simplifyyourweb.com/free-products/latest-news-enhanced/file/162-latest-news-enhanced';

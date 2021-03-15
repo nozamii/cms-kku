@@ -46,6 +46,7 @@ class JFormFieldSYWImageFilterPicker extends JFormFieldDynamicSingleSelect
 				$config_value = $config_params->get($this->fieldname);
 
 				if (!is_null($config_value)) {
+					$config_value = str_replace('_css', '', $config_value);
 					$options[] = array('', JText::sprintf('JGLOBAL_USE_GLOBAL_VALUE', JText::_('LIB_SYW_IMAGEFILTERPICKER_'.strtoupper($config_value))), '', $path . $config_value . '.jpg', '');
 				} else {
 					$options[] = array('', JText::_('JGLOBAL_USE_GLOBAL'), '('.JText::_('LIB_SYW_GLOBAL_UNKNOWN').')', '', '');

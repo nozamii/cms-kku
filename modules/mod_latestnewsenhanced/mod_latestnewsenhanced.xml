@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 3 or later</license>
 	<authorEmail>olivier.buisard@simplifyyourweb.com</authorEmail>
 	<authorUrl>www.simplifyyourweb.com</authorUrl>
-	<version>5.0.3</version>
+	<version>5.1.1</version>
 	<description>MOD_LATESTNEWSENHANCED_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_latestnewsenhanced">mod_latestnewsenhanced.php</filename>
@@ -60,7 +60,7 @@
 			
 			<fieldset name="basic" label="MOD_LATESTNEWSENHANCEDEXTENDED_INFORMATION_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
 							
-				<field type="extensionversion" version="5.0.3" />
+				<field type="extensionversion" version="5.1.1" />
 				<field type="extensionauthor" />
 				<field type="extensionconnect" />
 				<field type="extensiontranslators" translators="MOD_LATESTNEWSENHANCED_TRANSLATORS" />	
@@ -81,7 +81,7 @@
 					imagesrc="modules/mod_latestnewsenhanced/images/logo_pro.png"
 					downloadlink="https://simplifyyourweb.com/downloads/latest-news-enhanced-pro" downloadtext="MOD_LATESTNEWSENHANCED_INFO_PROVERSIONDOWLOAD" />
 				
-				<field type="sywlibtest" minversion="1.6.3" downloadlink="https://simplifyyourweb.com/downloads/syw-extension-library" />
+				<field type="sywlibtest" minversion="1.6.4" downloadlink="https://simplifyyourweb.com/downloads/syw-extension-library" />
 			</fieldset>
 			
 			<fieldset name="selection" label="MOD_LATESTNEWSENHANCEDEXTENDED_SELECTION_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
@@ -444,6 +444,10 @@
 				<field name="item_spacebetween" type="sywverbosetext" default="0" size="4" unit="px" filter="integer" icon="SYWicon-swap-horiz" 
 					label="MOD_LATESTNEWSENHANCEDEXTENDED_FIELD_SPACEBETWEENITEMS_LABEL" 
 					description="MOD_LATESTNEWSENHANCEDEXTENDED_FIELD_SPACEBETWEENITEMS_DESC" />
+				
+				<field name="items_align" type="sywspacingselect" default="c" 
+					label="MOD_LATESTNEWSENHANCEDEXTENDED_FIELD_ITEMSALIGNMENT_LABEL" 
+					description="MOD_LATESTNEWSENHANCEDEXTENDED_FIELD_ITEMSALIGNMENT_DESC" />
 										
 				<field type="subtitle" title="MOD_LATESTNEWSENHANCEDEXTENDED_HEAD_LABEL" />
 				

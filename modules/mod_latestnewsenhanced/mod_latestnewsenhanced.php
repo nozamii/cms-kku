@@ -595,7 +595,8 @@ if (empty($list)) { // $list can be an empty array
 			$result = $cache_anim_js->cache('animation_'.$module->id.'.js', $clear_header_files_cache);
 
 			if ($result) {
-				$doc->addScript(Uri::base(true).'/cache/mod_latestnewsenhanced/animation_'.$module->id.'.js');
+				//$doc->addScript(Uri::base(true).'/cache/mod_latestnewsenhanced/animation_'.$module->id.'.js');
+				HTMLHelper::_('script', 'cache/mod_latestnewsenhanced/animation_'.$module->id.'.js', array('relative' => false, 'version' => 'auto'), array('defer' => true));
 			}
 		}
 	} else {
@@ -604,33 +605,6 @@ if (empty($list)) { // $list can be an empty array
 			\JFile::delete(JPATH_CACHE.'/mod_latestnewsenhanced/animation_'.$module->id.'.js');
 		}
 	}
-
-// 	if ((empty($animation) || $animation == 'justpagination') && $item_width_unit == '%' && !empty($min_item_width)) {
-
- 		// add items responsiveness	when not in an animation other than pagination
-
-// 		HTMLHelper::_('jquery.framework');
-
-// 		$cache_js = new LNE_JSFileCache('mod_latestnewsenhanced', $params);
-
-// 		if ($generate_inline_scripts) {
-
-// 			$doc->addScriptDeclaration($cache_js->getBuffer());
-
-// 		} else {
-
-// 			$result = $cache_js->cache('style_'.$module->id.'.js', $clear_header_files_cache);
-
-// 			if ($result) {
-// 				$doc->addScript(Uri::base(true).'/cache/mod_latestnewsenhanced/style_'.$module->id.'.js');
-// 			}
-// 		}
-// 	} else {
- 		// remove style.js if it exists
-// 		if (\JFile::exists(JPATH_CACHE.'/mod_latestnewsenhanced/style_'.$module->id.'.js')) {
-// 			\JFile::delete(JPATH_CACHE.'/mod_latestnewsenhanced/style_'.$module->id.'.js');
-// 		}
-// 	}
 
 	if (\JFile::exists(JPATH_ROOT.'/modules/mod_latestnewsenhanced/styles/substitute_styles.css') || \JFile::exists(JPATH_ROOT.'/modules/mod_latestnewsenhanced/styles/substitute_styles-min.css')) {
 		modLatestNewsEnhancedHelper::loadUserStylesheet(true);
@@ -674,7 +648,8 @@ if (empty($list)) { // $list can be an empty array
 		$result = $cache_css->cache('style_'.$module->id.'.css', $clear_header_files_cache);
 
 		if ($result) {
-			$doc->addStyleSheet(Uri::base(true).'/cache/mod_latestnewsenhanced/style_'.$module->id.'.css');
+			//$doc->addStyleSheet(Uri::base(true).'/cache/mod_latestnewsenhanced/style_'.$module->id.'.css');
+			HTMLHelper::_('stylesheet', 'cache/mod_latestnewsenhanced/style_'.$module->id.'.css', array('relative' => false, 'version' => 'auto'));
 		}
 
 		modLatestNewsEnhancedHelper::loadCommonStylesheet();

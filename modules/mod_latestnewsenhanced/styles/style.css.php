@@ -24,7 +24,7 @@ header("Content-type: text/css; charset=UTF-8");
 	    	margin-left: auto;
 	    	margin-right: auto;
 	    <?php endif; ?>
-	    
+
 	    display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -32,9 +32,36 @@ header("Content-type: text/css; charset=UTF-8");
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
+		<?php if ($items_align == 'fs') : ?>
+	    	-webkit-box-pack: start;
+			-webkit-justify-content: flex-start;
+	    	-ms-flex-pack: start;
+	        justify-content: flex-start;
+	    <?php elseif ($items_align == 'fe') : ?>
+	    	-webkit-box-pack: end;
+			-webkit-justify-content: flex-end;
+	    	-ms-flex-pack: end;
+	        justify-content: flex-end;
+	    <?php elseif ($items_align == 'c') : ?>
+	    	-webkit-box-pack: center;
+			-webkit-justify-content: center;
+	    	-ms-flex-pack: center;
+	        justify-content: center;
+	    <?php elseif ($items_align == 'sb') : ?>
+	    	-webkit-box-pack: justify;
+	    	-webkit-justify-content: space-between;
+	        -ms-flex-pack: justify;
+	        justify-content: space-between;
+	    <?php elseif ($items_align == 'se') : ?>
+	    	-webkit-box-pack: space-evenly;
+			-webkit-justify-content: space-evenly;
+			-ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	    <?php else : ?>
+	    	-webkit-justify-content: space-around;
+			-ms-flex-pack: distribute;
+	        justify-content: space-around;
+	    <?php endif; ?>
 
 		<?php if (!$horizontal) : ?>
 			-webkit-flex-direction: column;
@@ -52,20 +79,20 @@ header("Content-type: text/css; charset=UTF-8");
 		<?php else : ?>
 			font-size: medium;
 		<?php endif; ?>
-		
+
 		-webkit-box-flex: 1;
 		-ms-flex: 1 1 auto;
 		flex: 1 1 auto;
-			
+
     	width: <?php echo $item_width; ?><?php echo $item_width_unit; ?>;
-    	
+
     	<?php if ($item_min_width) : ?>
 			min-width: <?php echo $item_min_width; ?>px;
 		<?php endif; ?>
 		<?php if ($item_max_width) : ?>
 			max-width: <?php echo $item_max_width; ?>px;
 		<?php endif; ?>
-		
+
     	<?php if ($item_width_unit == '%') : ?>
     		margin: <?php echo intval($space_between_items / 2); ?>px <?php echo $margin_in_perc; ?>%;
     	<?php else : ?>

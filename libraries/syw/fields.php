@@ -42,7 +42,7 @@ class SYWFields
 			if (count($results) == 1) {
 				return $results[0];
 			}
-		} catch (JDatabaseExceptionExecuting $e) {
+		} catch (RuntimeException $e) {
 			//JFactory::getApplication()->enqueueMessage(JText::_('JERROR_AN_ERROR_HAS_OCCURRED'), 'error');
 			return null;
 		}
